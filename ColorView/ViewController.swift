@@ -5,6 +5,9 @@
 //  Created by Jakub Majewski on 01.04.2017.
 //  Copyright © 2017 Jakub Majewski. All rights reserved.
 //
+//  self.view.bounds
+//  określa rozmiar widoku, który jest prezentowany użytkownikowi
+//
 
 import UIKit
 
@@ -12,14 +15,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let colorView = ColorView(frame: self.view.bounds)
+        self.view.addSubview(colorView)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
-
+    
 
 }
 
